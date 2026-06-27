@@ -28,13 +28,13 @@ on:
 jobs:
   build:
     name: Build Kernel by ${{ github.actor }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04 
     if: github.event.repository.owner.id == github.event.sender.id
     permissions:
       contents: write
     steps:
     # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
-    - name: Checkout
+    - name: CheckoI'mut
       uses: actions/checkout@v4
     # Install necessary packages for building android kernel
     - name: Cleanup
